@@ -42,5 +42,8 @@ class AuthServiceProvider extends ServiceProvider
         Gate::define('addToWishlist', function (User $user, Product $product) {
             //Check if user can add product to wishlist
         });
+        Gate::define('changeProductCoveImage', function (User $user, Product $product) {
+            //Check if user can change product cover image
+        });
     }
 }
