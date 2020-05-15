@@ -4,15 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ProductsController extends Controller
+class LikeReviewsController extends Controller
 {
-    public function create()
+    public function store()
     {
-        //Create product
+        //Like review
     }
 
     public function destroy(int $id)
     {
-        //Delete product
+        //Unlike review
     }
 }

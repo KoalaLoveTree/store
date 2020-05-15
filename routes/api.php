@@ -19,4 +19,6 @@ Route::prefix('v1')->group(function () {
     Route::post('orders', 'OrdersController@store')->middleware('can:create,App\Order');
     Route::get('/products/{id}/reviews', 'ProductRewiewsController@index')->middleware('can:viewProductReviews');
     Route::post('/products/{id}/reviews', 'ProductRewiewsController@store')->middleware('can:createReviewForProduct');
+    Route::post('/liked-reviews', 'LikedRewiewsController@store')->middleware('can:likeReview');
+    Route::delete('/liked-reviews/{id}', 'LikedRewiewsController@destroy')->middleware('can:unlikeReview');
 });

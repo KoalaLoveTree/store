@@ -8,5 +8,6 @@ class OrdersController extends Controller
 {
     public function store()
     {
+        //Create order
     }
 }
