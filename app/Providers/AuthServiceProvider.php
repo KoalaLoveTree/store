@@ -36,11 +36,8 @@ class AuthServiceProvider extends ServiceProvider
         Gate::define('createReviewForProduct', function (User $user, Product $product) {
             //Check if user can create review for product
         });
-        Gate::define('likeReview', function (User $user) {
-            //Check if user can like reviews for product
-        });
-        Gate::define('unlikeReview', function (User $user) {
-            //Check if user can unlike review for product
+        Gate::define('rateReview', function (User $user) {
+            //Check if user can rate reviews for product
         });
     }
 }

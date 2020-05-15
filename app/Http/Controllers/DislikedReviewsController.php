@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class LikeReviewsController extends Controller
+class DislikedReviewsController extends Controller
 {
     public function store()
     {
-        //Like review
+        //Dislike review
     }
 }
