@@ -39,5 +39,8 @@ class AuthServiceProvider extends ServiceProvider
         Gate::define('rateReview', function (User $user) {
             //Check if user can rate reviews for product
         });
+        Gate::define('addToWishlist', function (User $user, Product $product) {
+            //Check if user can add product to wishlist
+        });
     }
 }
