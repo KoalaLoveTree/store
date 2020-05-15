@@ -8,11 +8,9 @@ class ProductsController extends Controller
 {
     public function create()
     {
-
     }
 
     public function destroy(int $id)
     {
-
     }
 }

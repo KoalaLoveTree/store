@@ -8,11 +8,9 @@ class ProductReviewsController extends Controller
 {
     public function index(int $id)
     {
-
     }
 
     public function store(int $id)
     {
-
     }
 }
