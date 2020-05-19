@@ -45,5 +45,8 @@ class AuthServiceProvider extends ServiceProvider
         Gate::define('changeProductCoveImage', function (User $user, Product $product) {
             //Check if user can change product cover image
         });
+        Gate::define('purchaseOrder', function (User $user, Product $product) {
+            //Check if user can change product cover image
+        });
     }
 }

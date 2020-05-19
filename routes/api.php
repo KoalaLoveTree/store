@@ -23,4 +23,7 @@ Route::prefix('v1')->group(function () {
     Route::post('/disliked-reviews', 'DislikedRewiewsController@store')->middleware('can:rateReview');
     Route::post('/wishlist/products', 'WishlistProductsController@store')->middleware('can:addToWishlist');
     Route::put('/products/{id}/cover-image', 'ProductCoverImageController@update')->middleware('can:changeProductCoveImage');
+    Route::post('/orders/{id}/purchase/stripe', 'StripeOrderPurchaseController@store')->middleware('can:purchaseOrder');
+    Route::post('/orders/{id}/purchase/pay-pal', 'PayPalOrderPurchaseController@store')->middleware('can:purchaseOrder');
+    Route::post('/orders/{id}/purchase/apple-pay', 'ApplePayOrderPurchaseController@store')->middleware('can:purchaseOrder');
 });
